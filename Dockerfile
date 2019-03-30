@@ -1,4 +1,4 @@
-FROM alpine
+FROM balenalib/armv7hf-alpine
 RUN apk add --no-cache samba \
 && mkdir -p /var/data/timemachine \
 && mkdir /temp
