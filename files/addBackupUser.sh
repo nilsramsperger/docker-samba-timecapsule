@@ -8,7 +8,7 @@ else
     echo "Confirm password"
     read -s pw2
     if [[ "$pw1" = "$pw2" ]]; then
-        yes "$pw1" | adduser $1 --shell /bin \
+        adduser $1 -D -H \
         && yes "$pw1" | smbpasswd -a $1 \
         && mkdir -m 700 /var/data/timemachine/$1 \
         && cp /temp/.com.apple.TimeMachine.quota.plist /var/data/timemachine/$1/.com.apple.TimeMachine.quota.plist \
