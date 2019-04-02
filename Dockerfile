@@ -9,7 +9,7 @@ ADD files/addBackupUser.sh /usr/bin/addBackupUser
 ADD ./files/.com.apple.TimeMachine.quota.plist /temp
 RUN chmod +x /usr/bin/addBackupUser
 RUN ["cross-build-end"]
-VOLUME ["/var/data/timemachine", "/var/lib/samba/private", "/etc/passwd"]
+VOLUME ["/var/data/timemachine", "/var/lib/samba/private", "/etc"]
 EXPOSE 445/tcp
 EXPOSE 137/tcp
 EXPOSE 139/tcp
