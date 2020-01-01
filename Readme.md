@@ -37,7 +37,7 @@ After that TimeMachine should reconnect by itself automatically.
 
 * ```/var/data/timecapsule``` holds the user directories with backup data.
 * ```/var/lib/samba/private``` contains the samba user databases.
-* ```/etc``` it put into a volume to persist system users.
+* ```/etc``` is put into a volume to persist system users.
 
 ### Known Issues
 
